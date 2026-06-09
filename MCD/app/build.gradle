@@ -1,0 +1,27 @@
+plugins {
+	id 'com.android.application'
+}
+
+//net.cloc3 is a free target. you may use com.example
+android {
+	namespace 'net.cloc3.MCD'
+	compileSdk 34
+
+	defaultConfig {
+		applicationId "net.cloc3.MCD"
+		minSdk 24
+		targetSdk 34
+		versionCode 1
+		versionName "1.0"
+	}
+
+	applicationVariants.all { variant ->
+		variant.outputs.all { output ->
+			if (variant.buildType.name == "release") {
+				outputFileName = "MCD.apk"
+			} else {
+				outputFileName = "MCD-debug.apk"
+			}
+		}
+	}
+}

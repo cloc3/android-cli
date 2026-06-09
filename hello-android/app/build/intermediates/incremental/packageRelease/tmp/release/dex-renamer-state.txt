@@ -1,0 +1,4 @@
+#Tue Jun 09 11:07:20 CEST 2026
+base.0=/home/cloc3/github/android-cli/hello-android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
